@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Decoration</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+      body, html{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .firsttext {
+        position: absolute;
+        top: 130px;
+        left: 372px;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .secondtext{
+        position: relative;
+        margin-top: -66px;
+        font-size: 15px;  
+      }
+      .lorem {
+        position: absolute;
+        font-size: 14px;
+        top: 70px;
+        left: 2px;
+        width: 1163px;
+        color: #c0c0c0;
+        line-height: 1.6;
+      }
+      .lorem2 {
+        position: absolute;
+        font-size: 14px;
+        top: 49px;
+        left: 2px;
+        width: 1163px;
+        color: #c0c0c0;
+        line-height: 1.6;
+      }
+      .list1 {
+        font-size: 14px;
+        position: absolute;
+        top: 143px;
+        left: -53px;
+        line-height: 2.1;
+        width: 400px;
+      }
+      .list2 {
+        position: relative;
+        top: 79px;
+        left: 343px;
+        width: 400px;
+        line-height: 2;
+      }
+      .list3 {
+        position: relative;
+        top: -88px;
+        left: 743px;
+        width: 400px;
+        line-height: 1.4;
+      }
+      li {
+        list-style: none;
+        font-size: 14px;
+      }
+      li::before {
+        content: "■";
+        font-size: 32px;
+        line-height: 17.5px;
+        padding: 15px;
+      }
+      .list2 li::before {
+        content: "☐";
+        font-size: 22px;
+        line-height: 26.5px;
+        padding: 18px;
+      }
+      .list3 li::before {
+        content: "■";
+        font-size: 32px;
+        line-height: 26.5px;
+        padding: 18px;
+      }
+      .pretext{
+        position: relative;
+        background-color: ghostwhite;
+        color: #c0c0c0;
+        top: 85px;
+        left: 6px;
+        width: 1165px;
+        height: 190px;
+      }
+      .pre1{
+        position: relative;
+        left: -19px;
+        top: 28px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .textafterpre{
+        position: relative;
+        color: #c0c0c0;
+        top: 111px;
+        font-size: 14px;
+        line-height: 23px;
+        width: 1151px;
+      }
+      .greybox{
+        position: relative;
+        display: inline-block;
+        height: 399px;
+        width: 372px;
+        top: 138px;
+        background-color: whitesmoke;
+      }
+      .textnexttogreybox{
+        position: relative;
+        color: #c0c0c0;
+        bottom: 268px;
+        left: 404px;
+        width: 769px;
+        line-height: 23px;
+        font-size: 14px;
+      }
+      .borderoflittleblock{
+        position: relative;
+        bottom: 221px;
+        left: 3px;
+        width: 1167px;
+        height: 48px;
+        border: 1px grey solid;
+      }
+      .littleblock{
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left: -1px;
+        height: 48px;
+        width: 50px;
+        background-color: #696969;
+      }
+      .circle{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        background-color: aliceblue;
+        border-radius: 50%;
+      }
+      .plus{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        color: aliceblue;
+        background-color: #696969;
+        border-radius: 50%;
+        text-align: center;
+      }
+      .textnexttoborder{
+        color: #696969;
+        position: relative;
+        top: 15px;
+        left: 71px;
+        width: 616px;
+        font-size: 14.5px;
+      }
+      a{
+        color: rgb(27, 189, 27);
+      }
+      .borderofadminblock{
+        height: 159px;
+        width: 1167px;
+        border: 1px solid silver;
+        background-color: azure;
+        position: relative;
+        bottom: 169px;
+      }
+      .adminblock{
+        position: relative;
+        top: 21px;
+        left: 27px;
+        height: 100px;
+        width: 100px;
+        border: 6px solid white;
+        border-radius: 9%;
+        background-color: #696969;
+      }
+      .admin{
+        position: absolute;
+        top: 9px;
+        left: 164px;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+      .wd{
+        position: absolute;
+        top: 30px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .ilorem{
+        font-size: 13.9px;
+        width: 200px;
+        position: relative;
+        top: 17px;
+        left: -1px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="firsttext">
+      <h1>You Will Love Our Styles</h1>
+      <div class="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius
+        ultricies metus. Donec ac ex porta libero venenatis sodales. Sed
+        efficitur eget risus sed molestie. Nulla blandit bibendum metus ut
+        sagittis. Etiam quis semper justo. Sed tristique facilisis felis ut
+        tincidunt. Phasellus auctor convallis nisl ut accumsan. Suspendisse
+        ullamcorper fermentum lectus, vel tincidunt ligula mollis sit amet.
+        Suspendisse ullamcorper fermentum lectus, vel tincidunt ligula mollis
+        sit amet:
+      </div>
+      <div style="color: #c0c0c0" class="list1">
+        <ul>
+          <li>Phasellus sit amet velit auctor turpis rhoncus.</li>
+          <li>Phasellus sed dolor sodales, eleifend ipsum eu.</li>
+          <li>Nullam id dolor in ex eleifend tempus.</li>
+          <li>Etiam id lorem vel neque faucibus fermentum.</li>
+          <li>Nunc tincidunt augue in enim sollicitudin feugiat.</li>
+        </ul>
+      </div>
+      <div style="color: #c0c0c0" class="list2">
+        <ul>
+          <li>Phasellus sit amet velit auctor turpis rhoncus.</li>
+          <li>Phasellus sed dolor sodales, eleifend ipsum eu.</li>
+          <li>Nullam id dolor in ex eleifend tempus.</li>
+          <li>Etiam id lorem vel neque faucibus fermentum.</li>
+          <li>Nunc tincidunt augue in enim sollicitudin feugiat.</li>
+        </ul>
+      </div>
+      <div style="color: #c0c0c0" class="list3">
+        <ul>
+          <li>Phasellus sit amet velit auctor turpis rhoncus.</li>
+          <li>Phasellus sed dolor sodales, eleifend ipsum eu.</li>
+          <li>Nullam id dolor in ex eleifend tempus.</li>
+          <li>Etiam id lorem vel neque faucibus fermentum.</li>
+          <li>Nunc tincidunt augue in enim sollicitudin feugiat.</li>
+        </ul>
+      </div>
+      <div class="secondtext">
+        <h1>You Will Love Our Styles</h1>
+      <div class="lorem2">
+        Lorem ipsum dolor sit amet,
+                 consectetur adipiscing elit. Sed varius ultricies metus.
+                  Donec ac ex porta libero venenatis sodales.
+                   Sed efficitur eget risus sed molestie.
+                    Nulla blandit bibendum metus ut sagittis.
+                     Etiam quis semper justo. Sed tristique facilisis felis ut tincidunt.
+                      Phasellus auctor convallis nisl ut accumsan. Suspendisse ullamcorper fermentum lectus,
+                       vel tincidunt ligula mollis sit amet. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed varius ultricies metus.
+                         Donec ac ex porta libero venenatis sodales.
+                          Sed efficitur eget risus sed molestie. Nulla blandit bibendum metus ut sagittis:
+      </div>
+      <div class="pretext">
+        <pre class="pre1">
+            .some-style {
+                width: 850px;
+                height: 190px;
+                margin: 0 auto;
+                background-color: #FFF;
+            }
+        </pre>
+      </div>
+      <div class="textafterpre">
+        Nunc tincidunt, elit non cursus euismod,
+     lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris.
+      Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget,
+       vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula,
+        lacus justo semper libero, quis porttitor turpis odio sit amet ligula.
+         Duis dapibus fermentum orci, nec malesuada libero vehicula ut.
+          Integer sodales, urn a eget interdum eleifend, nulla nibh laoreet nisl,
+           quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus,
+            adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis.
+             Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus,
+              justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu,
+               vitae vulputate augue lacinia faucibus. Nunc tincidunt,
+                elit non cursus euismod, lacus augue ornare metus,
+                 egestas imperdiet nulla nisl quis mauris.
+                  Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi.
+     Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero.
+      </div>
+      <div class="greybox"></div>
+      <div class="textnexttogreybox">
+        Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget,
+        vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. 
+    <br>
+    <br>
+    Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus,
+    adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc.
+    Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus. Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus,
+    pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttito.
+    <br>
+    <br>
+        Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus,
+         pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula.
+          Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi.
+           Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis.
+        </div>
+        <div class="borderoflittleblock">
+            <div class="textnexttoborder"><span> Awesome, Design,  Web Design,  Graphic,  Photography, <a href="url">tranmautritam</a>,  Designers,  Wordpress</span></div>
+            <div class="littleblock">
+                <div class="circle">
+                <div class="plus">+</div>
+            </div>
+            </div>
+        </div>
+        <div class="borderofadminblock">
+            <div class="adminblock"></div>
+            <div class="admin">
+            <p>Administrator</p>
+            <p class="wd">Web Designer</p>
+            <i class="ilorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem,
+                 adipiscing in adipiscing et, interdum nec metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio.
+            </i>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
