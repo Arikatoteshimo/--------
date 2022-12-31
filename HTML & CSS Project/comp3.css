@@ -1,0 +1,48 @@
+.comp3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    margin: 0;
+}
+.photo{
+    position: relative;
+    left: 14%;
+    top: 2%;
+}
+.txtpos{
+    position: relative;
+    bottom: 30.5%;
+    left: 14.6%;
+    font-size: 29px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.smltxtpos{
+    position: relative;
+    top: 13%;
+    right: 1.5%;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    width: 607px;
+    height: 500px;
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+}
+.btn{
+    position: relative;
+    top: 28%;
+    right: 33%;
+}
+.button1{
+    border: 2px black solid;
+    width: 211px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}

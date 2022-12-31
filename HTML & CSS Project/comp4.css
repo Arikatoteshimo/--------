@@ -1,0 +1,48 @@
+.comp4{
+    display: grid;
+    width: 100vw;
+    height: 37vh;
+    grid-template: 3 / 1;
+    margin: 0;
+    padding: 0;
+}
+.p{
+    
+    grid-column: 1 / 2;
+    width: 33.3vw;
+    height: 37vh;
+    background-color: rgb(77, 0, 128);
+}
+.lb{
+   
+    grid-column: 2 / 3;
+    width: 33.3vw;
+    height: 37vh;
+    background-color: lightskyblue;
+}
+.r{
+  
+    grid-column: 3 / 4;
+    width: 33.3vw;
+    height: 37vh;
+    background-color: rgb(250, 56, 22);
+}
+.comp4 span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    height: 89px;
+    font-size: 14px;
+    width: 482px;
+    color: white;
+    position: absolute;
+    left: 4%;
+    top: 194%;
+    
+}
+h4{
+    color: white;
+    position: relative;
+    left: 12.4%;
+    top: 15%;
+}

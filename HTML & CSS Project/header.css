@@ -1,0 +1,51 @@
+
+.header {
+    background-color:#040b4b;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-basis: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 16%;
+    
+}
+.links{
+    display: flex;
+    align-items: center;
+    margin-left: 8.8%;
+}
+.header a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10.6%;
+}
+
+.header p{
+    color: white;
+    font-size: 35.69px;
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    padding: 9%;
+}
+.header a:hover{
+    color: rgb(50, 134, 50);
+}
+.header b{
+    font-weight: bolder;
+}
+.fox{
+    width: 40px;
+    height: 45px;
+    padding-left: 50%;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+

@@ -1,0 +1,30 @@
+.we{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 100vh;
+}
+.txt{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.5%;
+    margin-left: 1%;
+}
+.bigtxt{
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.littxt{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 7.5%;
+    letter-spacing: 1px;
+}
+
